@@ -95,8 +95,8 @@ data {
 transformed data {
   real Ysun = 0.0;                     // Sun galactocentric Cartesian y-coordinate (0 by definition)
   // parameters for priors
-  real h_param_prior_alpha = 1.1;      // In kpc
-  real h_param_prior_beta = 10;        // In kpc
+  real h_param_prior_mean = 4;      // In kpc
+  real h_param_prior_sigma = 2;        // In kpc
   real p_param_mean = -0.5; 
   real p_param_sigma = 1.5;
   real Vsun_pec_x_prior_mean = 11.0;
@@ -106,7 +106,7 @@ transformed data {
   real Vsun_pec_y_prior_sigma = 20.0;
   real Vsun_pec_z_prior_sigma = 20.0;
   real v0_prior_mean = 234.0;      // In km/s
-  real v0_prior_sigma = 20;
+  real v0_prior_sigma = 100;
   real vdisp_prior_alpha = 2.0; // Used for both xy and z dispersion
   real vdisp_prior_beta = 0.1;  //
 
@@ -145,13 +145,13 @@ transformed data {
 
 parameters {
   real <lower=0> h_param;      // Scalelength of the rotational velocity function introduced by B&P
-  real p_param;                // Model parameter allowing study of different versions of the introduced model type by B&P
+  real<lower=-1, upper=2> p_param;                // Model parameter allowing study of different versions of the introduced model type by B&P
   real Vsun_pec_x;             // Peculiar velocity of Sun in Galactocentric Cartesian X
   real Vsun_pec_y;             // Peculiar velocity of Sun in Galactocentric Cartesian Y
   real Vsun_pec_z;             // Peculiar velocity of Sun in Galactocentric Cartesian Z
   real vdispxy;
   real vdispz;
-  real v0;
+  real<lower=0> v0;
 
 }
 
@@ -182,8 +182,8 @@ transformed parameters {
 }
 
 model {
-  h_param ~ gamma(h_param_prior_alpha, h_param_prior_beta);
-  p_param ~ normal(p_param_mean, p_param_sigma);
+  h_param ~ normal(h_param_prior_mean, h_param_prior_sigma);
+  p_param ~ normal(p_param_mean, p_param_sigma);  // T[-1, 2]
   Vsun_pec_x ~ normal(Vsun_pec_x_prior_mean, Vsun_pec_x_prior_sigma);
   Vsun_pec_y ~ normal(Vsun_pec_y_prior_mean, Vsun_pec_y_prior_sigma);
   Vsun_pec_z ~ normal(Vsun_pec_z_prior_mean, Vsun_pec_z_prior_sigma);

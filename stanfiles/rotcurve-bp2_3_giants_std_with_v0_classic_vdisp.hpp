@@ -11,13 +11,13 @@ stan::math::profile_map profiles__;
 static constexpr std::array<const char*, 137> locations_array__ = 
 {" (found before start of program)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 147, column 2 to column 25)",
- " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 148, column 2 to column 15)",
+ " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 148, column 2 to column 34)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 149, column 2 to column 18)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 150, column 2 to column 18)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 151, column 2 to column 18)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 152, column 2 to column 15)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 153, column 2 to column 14)",
- " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 154, column 2 to column 10)",
+ " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 154, column 2 to column 19)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 159, column 2 to column 30)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 160, column 2 to column 21)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 161, column 2 to column 30)",
@@ -46,7 +46,7 @@ static constexpr std::array<const char*, 137> locations_array__ =
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 207, column 4 to column 29)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 204, column 17 to line 208, column 3)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 204, column 2 to line 208, column 3)",
- " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 185, column 2 to column 59)",
+ " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 185, column 2 to column 60)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 186, column 2 to column 48)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 187, column 2 to column 69)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 188, column 2 to column 69)",
@@ -77,7 +77,7 @@ static constexpr std::array<const char*, 137> locations_array__ =
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 91, column 2 to column 12)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 92, column 2 to column 12)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 96, column 2 to column 18)",
- " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 98, column 2 to column 33)",
+ " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 98, column 2 to column 30)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 99, column 2 to column 31)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 100, column 2 to column 27)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 101, column 2 to column 27)",
@@ -88,7 +88,7 @@ static constexpr std::array<const char*, 137> locations_array__ =
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 106, column 2 to column 37)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 107, column 2 to column 37)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 108, column 2 to column 29)",
- " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 109, column 2 to column 27)",
+ " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 109, column 2 to column 28)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 110, column 2 to column 31)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 111, column 2 to column 30)",
  " (in 'C:/Users/rjrri/DOCUME~1/UNIVER~1/FIRSTP~1/MILKYW~2/STANFI~1/rotcurve-bp2_3_giants_std_with_v0_classic_vdisp.stan', line 113, column 2 to column 34)",
@@ -364,8 +364,8 @@ class rotcurve_bp2_3_giants_std_with_v0_classic_vdisp_model final : public model
   double Rsun;
   double Zsun;
   double Ysun;
-  double h_param_prior_alpha;
-  double h_param_prior_beta;
+  double h_param_prior_mean;
+  double h_param_prior_sigma;
   double p_param_mean;
   double p_param_sigma;
   double Vsun_pec_x_prior_mean;
@@ -661,17 +661,17 @@ class rotcurve_bp2_3_giants_std_with_v0_classic_vdisp_model final : public model
       current_statement__ = 67;
       Ysun = 0.0;
       current_statement__ = 68;
-      h_param_prior_alpha = std::numeric_limits<double>::quiet_NaN();
+      h_param_prior_mean = std::numeric_limits<double>::quiet_NaN();
       
       
       current_statement__ = 68;
-      h_param_prior_alpha = 1.1;
+      h_param_prior_mean = 4;
       current_statement__ = 69;
-      h_param_prior_beta = std::numeric_limits<double>::quiet_NaN();
+      h_param_prior_sigma = std::numeric_limits<double>::quiet_NaN();
       
       
       current_statement__ = 69;
-      h_param_prior_beta = 10;
+      h_param_prior_sigma = 2;
       current_statement__ = 70;
       p_param_mean = std::numeric_limits<double>::quiet_NaN();
       
@@ -731,7 +731,7 @@ class rotcurve_bp2_3_giants_std_with_v0_classic_vdisp_model final : public model
       
       
       current_statement__ = 79;
-      v0_prior_sigma = 20;
+      v0_prior_sigma = 100;
       current_statement__ = 80;
       vdisp_prior_alpha = std::numeric_limits<double>::quiet_NaN();
       
@@ -961,7 +961,8 @@ class rotcurve_bp2_3_giants_std_with_v0_classic_vdisp_model final : public model
                   jacobian__>(0, lp__);
       local_scalar_t__ p_param = DUMMY_VAR__;
       current_statement__ = 2;
-      p_param = in__.template read<local_scalar_t__>();
+      p_param = in__.template read_constrain_lub<local_scalar_t__, 
+                  jacobian__>(-1, 2, lp__);
       local_scalar_t__ Vsun_pec_x = DUMMY_VAR__;
       current_statement__ = 3;
       Vsun_pec_x = in__.template read<local_scalar_t__>();
@@ -979,7 +980,8 @@ class rotcurve_bp2_3_giants_std_with_v0_classic_vdisp_model final : public model
       vdispz = in__.template read<local_scalar_t__>();
       local_scalar_t__ v0 = DUMMY_VAR__;
       current_statement__ = 8;
-      v0 = in__.template read<local_scalar_t__>();
+      v0 = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(0,
+             lp__);
       std::vector<Eigen::Matrix<local_scalar_t__, -1, 1>> model_pm =
          std::vector<Eigen::Matrix<local_scalar_t__, -1, 1>>(N, 
            Eigen::Matrix<local_scalar_t__, -1, 1>::Constant(2, DUMMY_VAR__));
@@ -1092,8 +1094,8 @@ class rotcurve_bp2_3_giants_std_with_v0_classic_vdisp_model final : public model
       {
         current_statement__ = 37;
         lp_accum__.add(
-          stan::math::gamma_lpdf<propto__>(h_param, h_param_prior_alpha,
-            h_param_prior_beta));
+          stan::math::normal_lpdf<propto__>(h_param, h_param_prior_mean,
+            h_param_prior_sigma));
         current_statement__ = 38;
         lp_accum__.add(
           stan::math::normal_lpdf<propto__>(p_param, p_param_mean,
@@ -1172,7 +1174,8 @@ class rotcurve_bp2_3_giants_std_with_v0_classic_vdisp_model final : public model
                   jacobian__>(0, lp__);
       double p_param = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 2;
-      p_param = in__.template read<local_scalar_t__>();
+      p_param = in__.template read_constrain_lub<local_scalar_t__, 
+                  jacobian__>(-1, 2, lp__);
       double Vsun_pec_x = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 3;
       Vsun_pec_x = in__.template read<local_scalar_t__>();
@@ -1190,7 +1193,8 @@ class rotcurve_bp2_3_giants_std_with_v0_classic_vdisp_model final : public model
       vdispz = in__.template read<local_scalar_t__>();
       double v0 = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 8;
-      v0 = in__.template read<local_scalar_t__>();
+      v0 = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(0,
+             lp__);
       std::vector<Eigen::Matrix<double, -1, 1>> model_pm =
          std::vector<Eigen::Matrix<double, -1, 1>>(N, 
            Eigen::Matrix<double, -1, 1>::Constant(2,
@@ -1392,7 +1396,7 @@ class rotcurve_bp2_3_giants_std_with_v0_classic_vdisp_model final : public model
       out__.write_free_lb(0, h_param);
       local_scalar_t__ p_param = DUMMY_VAR__;
       p_param = in__.read<local_scalar_t__>();
-      out__.write(p_param);
+      out__.write_free_lub(-1, 2, p_param);
       local_scalar_t__ Vsun_pec_x = DUMMY_VAR__;
       Vsun_pec_x = in__.read<local_scalar_t__>();
       out__.write(Vsun_pec_x);
@@ -1410,7 +1414,7 @@ class rotcurve_bp2_3_giants_std_with_v0_classic_vdisp_model final : public model
       out__.write(vdispz);
       local_scalar_t__ v0 = DUMMY_VAR__;
       v0 = in__.read<local_scalar_t__>();
-      out__.write(v0);
+      out__.write_free_lb(0, v0);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }

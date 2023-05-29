@@ -98,8 +98,8 @@ data {
 transformed data {
   real Ysun = 0.0;                     // Sun galactocentric Cartesian y-coordinate (0 by definition)
   // parameters for priors
-  real h_param_prior_alpha = 1.1;      // oud: 2.0
-  real h_param_prior_beta = 10;        // oud: 1.0
+  real h_param_prior_alpha = 1.1;
+  real h_param_prior_beta = 10; 	  // Inverted in Wolfram --> plotten met scipy: daar hebben ze dezelfde definitie.
   real p_param_mean = -0.5;
   real p_param_sigma = 1.5;
   real Vsun_pec_x_prior_mean = 11.0;

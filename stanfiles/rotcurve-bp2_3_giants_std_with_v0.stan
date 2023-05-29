@@ -95,10 +95,10 @@ data {
 transformed data {
   real Ysun = 0.0;                     // Sun galactocentric Cartesian y-coordinate (0 by definition)
   // parameters for priors
-  real h_param_prior_alpha = 1.1;      // In kpc
-  real h_param_prior_beta = 10;        // In kpc
-  real p_param_mean = -0.5; 
-  real p_param_sigma = 1.5;
+  real h_param_prior_mean = 5;      // In kpc
+  real h_param_prior_sigma = 2;        // In kpc
+  real p_param_mean = -0.9; 
+  real p_param_sigma = 1;
   real Vsun_pec_x_prior_mean = 11.0;
   real Vsun_pec_y_prior_mean = 12.0;
   real Vsun_pec_z_prior_mean = 7.0;
@@ -118,7 +118,7 @@ transformed data {
   real R_scale_z_prior_alpha = 1.2;
   real R_scale_z_prior_beta = 3;   // In kpc
   real v0_prior_mean = 234.0;      // In km/s
-  real v0_prior_sigma = 20;
+  real v0_prior_sigma = 100;
 
   real auInMeter = 149597870700.0;
   real julianYearSeconds = 365.25 * 86400.0;
@@ -154,18 +154,19 @@ transformed data {
 }
 
 parameters {
-  real <lower=0> h_param;      // Scalelength of the rotational velocity function introduced by B&P
-  real p_param;                // Model parameter allowing study of different versions of the introduced model type by B&P
+  real<lower=0> h_param;      // Scalelength of the rotational velocity function introduced by B&P
+  real<lower=-1, upper=2> p_param;                // Model parameter allowing study of different versions of the introduced model type by B&P
   real Vsun_pec_x;             // Peculiar velocity of Sun in Galactocentric Cartesian X
   real Vsun_pec_y;             // Peculiar velocity of Sun in Galactocentric Cartesian Y
   real Vsun_pec_z;             // Peculiar velocity of Sun in Galactocentric Cartesian Z
-  real <lower=0> amplitude_x;            // Amplitude used in functions determining behaviour of velocity dispersion in X
-  real <lower=0> amplitude_y;            // Amplitude used in functions determining behaviour of velocity dispersion in Y
-  real <lower=0> amplitude_z;            // Amplitude used in functions determining behaviour of velocity dispersion in Z
-  real <lower=0> R_scale_x;      // Scale factor used in functions determining behaviour of velocity disperersion in XYZ (can BE APART FOR X, Y AND Z)
-  real <lower=0> R_scale_y;      // Scale factor used in functions determining behaviour of velocity disperersion in XYZ (can BE APART FOR X, Y AND Z)
-  real <lower=0> R_scale_z;      // Scale factor used in functions determining behaviour of velocity disperersion in XYZ (can BE APART FOR X, Y AND Z)
-  real v0;
+  real<lower=0> v0;
+  real<lower=0> amplitude_x;            // Amplitude used in functions determining behaviour of velocity dispersion in X
+  real<lower=0> amplitude_y;            // Amplitude used in functions determining behaviour of velocity dispersion in Y
+  real<lower=0> amplitude_z;            // Amplitude used in functions determining behaviour of velocity dispersion in Z
+  real<lower=0> R_scale_x;      // Scale factor used in functions determining behaviour of velocity disperersion in XYZ (can BE APART FOR X, Y AND Z)
+  real<lower=0> R_scale_y;      // Scale factor used in functions determining behaviour of velocity disperersion in XYZ (can BE APART FOR X, Y AND Z)
+  real<lower=0> R_scale_z;      // Scale factor used in functions determining behaviour of velocity disperersion in XYZ (can BE APART FOR X, Y AND Z)
+
 
 }
 
@@ -200,18 +201,19 @@ transformed parameters {
 }
 
 model {
-  h_param ~ gamma(h_param_prior_alpha, h_param_prior_beta);
-  p_param ~ normal(p_param_mean, p_param_sigma);
+  h_param ~ normal(h_param_prior_mean, h_param_prior_sigma);
+  p_param ~ normal(p_param_mean, p_param_sigma); // T[-1, 2]
   Vsun_pec_x ~ normal(Vsun_pec_x_prior_mean, Vsun_pec_x_prior_sigma);
   Vsun_pec_y ~ normal(Vsun_pec_y_prior_mean, Vsun_pec_y_prior_sigma);
   Vsun_pec_z ~ normal(Vsun_pec_z_prior_mean, Vsun_pec_z_prior_sigma);
+  v0 ~ normal(v0_prior_mean, v0_prior_sigma);
   amplitude_x ~ normal(amplitude_x_prior_mean, amplitude_x_prior_sigma);
   amplitude_y ~ normal(amplitude_y_prior_mean, amplitude_y_prior_sigma);
   amplitude_z ~ normal(amplitude_z_prior_mean, amplitude_z_prior_sigma);
   R_scale_x ~ gamma(R_scale_x_prior_alpha, R_scale_x_prior_beta);
   R_scale_y ~ gamma(R_scale_y_prior_alpha, R_scale_y_prior_beta);
   R_scale_z ~ gamma(R_scale_z_prior_alpha, R_scale_z_prior_beta);
-  v0 ~ normal(v0_prior_mean, v0_prior_sigma);
+
 
   for (i in 1:N) {
     pm_obs[i] ~ multi_normal(model_pm[i], dcov[i]);
