@@ -1,0 +1,31 @@
+Running the sample fit with a subsample of 3000 stars
+In red:
+19:53:00 - cmdstanpy - WARNING - Some chains may have failed to converge.
+	Chain 1 had 71 divergent transitions (7.1%)
+	Chain 1 had 83 iterations at max treedepth (8.3%)
+	Chain 2 had 32 divergent transitions (3.2%)
+	Chain 2 had 100 iterations at max treedepth (10.0%)
+	Chain 3 had 37 divergent transitions (3.7%)
+	Chain 3 had 73 iterations at max treedepth (7.3%)
+	Chain 4 had 4 divergent transitions (0.4%)
+	Chain 4 had 123 iterations at max treedepth (12.3%)
+	Use function "diagnose()" to see further information.
+
+.summary():
+ 	Mean 	MCSE 	StdDev 	5% 	50% 	95% 	N_Eff 	N_Eff/s 	R_hat
+lp__ 	-9608.660000 	0.052307 	2.091340 	-9612.630000 	-9608.320000 	-9605.98000 	1598.58 	0.076324 	1.003020
+Vcirc_sun 	74.679100 	0.395389 	17.969700 	45.132400 	74.426800 	103.41400 	2065.53 	0.098619 	1.000990
+dVcirc_dVr 	-0.350664 	0.141049 	9.801390 	-16.448800 	-0.302146 	15.40830 	4828.78 	0.230550 	0.999867
+Vsun_pec_x 	17.774700 	0.023311 	1.517230 	15.242300 	17.754600 	20.31960 	4236.14 	0.202254 	1.000600
+Vsun_pec_y 	-11.460200 	0.397143 	17.983100 	-40.057000 	-11.375100 	17.84710 	2050.39 	0.097896 	1.001060
+Vsun_pec_z 	8.677480 	0.005802 	0.387582 	8.036140 	8.679290 	9.30811 	4462.69 	0.213071 	1.000830
+vdispxy 	55.925800 	0.010573 	0.717371 	54.741100 	55.929400 	57.09490 	4603.07 	0.219774 	1.000260
+vdispz 	20.879000 	0.004243 	0.286231 	20.405300 	20.880200 	21.35450 	4550.70 	0.217273 	0.999397
+h_param 	3.838460 	0.042176 	2.356600 	0.507339 	3.560560 	8.08253 	3122.01 	0.149061 	0.999792
+
+
+
+
+https://discourse.mc-stan.org/t/error-evaluating-the-log-probability-at-the-initial-value/5254/2
+http://bebi103.caltech.edu.s3-website-us-east-1.amazonaws.com/2020b/content/lessons/lesson_04/regression_with_stan.html
+https://mc-stan.org/users/documentation/case-studies/radon_cmdstanpy_plotnine.html
