@@ -3,7 +3,7 @@
  * to fit observed proper motions of a sample of OBA stars.
  *
  * In this model the rotation curve has a constant gradient as a function of distance 
- * from the galactic centre. That is,it declines (or increases) linearly with distance.
+ * from the galactic centre. That is,  it declines (or increases) linearly with distance.
  * The free parameters are:
  *
  *  Vcirc_sun: circular velocity at the location of the sun (positive value by convention, km/s)
